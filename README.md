@@ -1,5 +1,5 @@
-                                                             BrainCandy
-                    ---------------------- Read this carefully before using the webiste !!!!! -----------------------
+                                                        BrainCandy
+                          ----------- Read this carefully before using the webiste !!!!! -----------
 
 This is a personalised learning website for elementry kids to learn math with fun.
 
@@ -25,4 +25,4 @@ For each correct question you will receive a candy.
 
 At end of the session you will get results of your performance.
 
-                                           --------- Have fun with learning---------
+                                     --------- Have fun with learning---------
