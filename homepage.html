@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<head>
+<title> Braincandy | Homepage </title>
+<script src="https://kit.fontawesome.com/b1f5b142ce.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://github.com/Roshan-Vijey/BrainCandy/blob/main/Boba%20Cups.ttf">
+<link rel="stylesheet" href="https://github.com/Roshan-Vijey/BrainCandy/blob/main/Nice%20Sugar.ttf">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One">
+<style>
+html,body { 
+ margin:0;
+ height:100%;
+}
+* {
+ box-sizing:border-box;
+}
+
+#whole::after {
+ content:"";
+ display:table;
+ clear:both;
+}
+.top::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top i {
+  float: left;
+  font-size: 69px;
+  color: #00b4d8;
+  left: 4px;
+  top: 7px;
+  position: absolute;
+}
+#whole {
+ float:left;
+ padding-left: 75px;
+ padding-top: 5px;
+ margin-left: 5px;
+ margin-top: 3px;
+ background-color:#e5f3fd;
+ width:290px;
+ border-radius:40px;
+}
+#info {
+  float: left;
+  font-family:Secular One;
+  font-size:19px;
+  font-weight:550;
+}
+#candy {
+  float: left;
+  margin-left: 16px;
+  font-family:Secular One;
+  font-size:19px;
+  font-weight:550;
+}
+#name {
+  margin-top: -5px;
+}
+#logo {
+ float: left;
+ text-decoration:none;
+ text-align:center;
+ padding:10px;
+ font-size:50px;
+ font-family:Boba Cups;
+ margin-left:200px;
+}
+
+#logout{
+ float: left;
+ margin-top:12px;
+ padding:12px;
+ border-radius:5px;
+ text-align:center;
+ text-decoration:none;
+ background-color:#00b4d8;
+ color:white;
+ font-size:20px;
+ font-family:courier;
+ margin-left: 430px;
+ font-weight:bold;
+} 
+
+#logout:hover {
+  box-shadow:3px 3px 3px skyblue;
+}
+
+.opt::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.opt a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-family: Nice Sugar,monospace;
+  font-weight: bold;
+  margin-top: 20px;
+  transform: translateY(-45px);
+  cursor : pointer;
+}
+#home {
+  margin-left: 340px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: deeppink;
+  border-radius: 10px;
+  text-align: center;
+}
+#home:hover {
+  box-shadow: 6px 6px 6px hotpink;
+}
+#lead {
+  margin-left: 50px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: purple;
+  border-radius: 10px;
+  text-align: center;
+}
+#lead:hover {
+  box-shadow: 7px 7px 7px mediumpurple;
+}
+#worksheet {
+  margin-left: 50px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  text-align: center;
+}
+#worksheet:hover {
+  box-shadow: 9px 9px 9px skyblue;
+}
+#game {
+  margin-left: 50px;
+  padding: 15px;
+  font-size: 18px;
+  background-color:mediumseagreen ;
+  border-radius: 10px;
+  text-align: center;
+}
+#game:hover {
+  box-shadow: 7px 7px 7px lightgreen;
+}
+
+.main {
+  background-color:#ffd1dc;
+  height:81.5%;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  margin-top: 25px;
+}
+#num {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 280px;
+  color: black;
+  border-radius: 20px;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 140px;
+  border-bottom-width:10px;
+  border-bottom-style: solid;
+  border-bottom-color:#f2f2f2;
+}
+#num:hover {
+  cursor:pointer;
+  box-shadow: 4px 4px 4px grey;
+}
+#numspan {
+  display: inline-block;
+  color: darkgrey;
+  font-family:;
+  font-size: 14px;
+  padding-left:4px ;
+}
+#mens {
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 280px;
+  color: black;
+  border-radius: 20px;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 100px;
+  border-bottom-width:10px;
+  border-bottom-style: solid;
+  border-bottom-color:#f2f2f2;
+}
+#mens:hover {
+  cursor:pointer;
+  box-shadow: 4px 4px 4px grey;
+}
+#frac {
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 280px;
+  color: black;
+  border-radius: 20px;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 100px;
+  border-bottom-width:10px;
+  border-bottom-style: solid;
+  border-bottom-color:#f2f2f2;
+}
+#frac:hover {
+  cursor:pointer;
+  box-shadow: 4px 4px 4px grey;
+}
+#dec {
+  display:inline-block;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 280px;
+  color: black;
+  border-radius: 20px;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 140px;
+  border-bottom-width:10px;
+  border-bottom-style: solid;
+  border-bottom-color:#f2f2f2;
+  text-decoration: none;  
+}
+#dec:hover {
+  cursor:pointer;
+  box-shadow: 4px 4px 4px grey;
+}
+#stat {
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 280px;
+  color: black;
+  border-radius: 20px;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 100px;
+  border-bottom-width:10px;
+  border-bottom-style: solid;
+  border-bottom-color:#f2f2f2;
+}
+#stat:hover {
+  cursor:pointer;
+  box-shadow: 4px 4px 4px grey;
+}
+#th {
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 280px;
+  color: black;
+  border-radius: 20px;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 100px;
+  border-bottom-width:10px;
+  border-bottom-style: solid;
+  border-bottom-color:#f2f2f2;
+}
+#th:hover {
+  cursor:pointer;
+  box-shadow: 4px 4px 4px grey;
+}
+#lock {
+  position: absolute;
+  bottom: 30%;
+  left: 26%;
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+<i class="fa-solid fa-circle-user"></i>
+<div id="whole">
+<div id="info"> 
+  <a> August Edwards </a>
+   <div> Class 5 </div> 
+ </div>
+ <div id="candy"> 
+  <a> <img src="https://img.icons8.com/fluency/35/null/cotton-candy.png">  </a> 
+  <div id="name"> 0 </div> 
+  </div>
+</div>
+<a id = "logo"> <span style="color:#9F3E9A">B</span><span style="color:#F66A98;">r</span><span style="color:#FF8997;">a</span><span style="color:#64ADF1;">i</span><span style="color:#C15AA8;">n</span><span style="color:#9F3E98;">C</span><span style="color:#F66A98;">a</span><span style="color:#FF8997;">n</span><span style="color:#64ADF1 ;">d</span><span style="color:#C15AA8;">y</span>
+</a>
+<a id="logout" href="https://github.com/Roshan-Vijey/BrainCandy/blob/main/loginpage.html"> LOGOUT </a>
+</div>
+<br>
+<div class = "main">
+<div class="opt">
+<a id="home"> HOME </a>
+<a id="worksheet"> WORKSHEETS </a>
+<a id="game"> GAMES </a>
+<a id="lead"> LEADERBOARD </a>
+</div>
+<br><br>
+<a id="num"> Numbers <br> <div id="numspan"> 0 out of 4 units completed </div> </a>
+<a id ="mens"> Mensuration  <br>  <div id="numspan"> 0 out of 3 units completed </div> </a>
+<a id="frac"> Fractions <br>  <div id="numspan"> 0 out of 2 units completed </div>  </a>
+<br><br><br><br>
+<div id="dec"> 
+  <div> Decimals </div>
+  <div id="numspan"> 0 out of 1 units completed </div>
+</div>
+<a id="stat">  Statistics <br>  <div id="numspan"> 0 out of 1 units completed </div> </a>
+<a id="th"> Number Theory  <br> <div id="numspan"> 0 out of 2 units completed </div> </a>
+</div>
+<div id="lock"> <img src="https://img.icons8.com/arcade/50/null/checked.png"/></div>
+</body>
+<script>
+  document.getElementById("dec").addEventListener("click",send);
+  function send() {
+    var start = new Date();
+    sessionStorage.setItem("start",start);
+    window.location.href = "decimals1.html";
+  }
+  if(sessionStorage.getItem("op") == "light") {
+    document.getElementById("lock").style.display = "inline-block";
+    document.getElementById("lock").style.opacity = "0.4";
+    document.getElementById("dec").style.opacity = "0.6";
+    document.getElementById("dec").children[1].innerHTML = "1 out of 1 units completed";
+    document.getElementById("dec").removeEventListener("click",send);
+    var pre = document.getElementById("name").innerHTML
+    pre = (+pre)+(+sessionStorage.getItem("candy"));
+    document.getElementById("name").innerHTML = pre;
+  }
+</script>
+</html>
