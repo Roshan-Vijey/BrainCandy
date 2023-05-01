@@ -3,6 +3,8 @@
 
 This is a personalised learning website for elementry kids to learn math with fun.
 
+Open the website in large screen devices for better experience
+
 Use the following details to get login
 
 Username: August Edwards
