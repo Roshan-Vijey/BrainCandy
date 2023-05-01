@@ -11,7 +11,7 @@ Password: August
 	 
 Create a new account is still on progress.
 
-Once you logined you taken to the homepage of August Edwards.
+Once you logined you will taken to the homepage of August Edwards.
 
 In the homepage you will see different features like worksheets,games,leaderboad which will be enabled in future.
 
