@@ -25,4 +25,4 @@ For each correct question you will receive a candy.
 
 At end of the session you will get results of your performance.
 
-                                                  --------- Have fun with learning---------
+                                           --------- Have fun with learning---------
