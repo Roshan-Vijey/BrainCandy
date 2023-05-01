@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika Negative">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Convergence">
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	html,body {
+		margin: 0;
+		height: 100%;
+	}
+	.top {
+		position: relative;
+	}
+	#topic {
+		width:30%;
+		position: absolute;
+		padding-left: 80px;
+		padding-top: 21px;
+		padding-bottom: 23px;
+		font-family: Signika Negative;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		background-color:#fc8eac;
+	}
+
+	#topic::after {
+		content:"";
+		position: absolute;
+		top: 0;
+		right: -30px;
+		width: 0;
+		height: 0;
+		border-left: 34.8px solid #fc8eac; 
+		border-right: 34.8px solid #f64a8a;
+		border-bottom: 34.8px solid #f64a8a;
+		border-top: 35px solid #f64a8a;
+	}
+	#mark {
+		width:100%;
+		height: 69px;
+		background-color:#f64a8a;
+	}
+	#mark::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#rem {
+		display: inline-block;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color:#fc8eac;
+		border-radius: 50%;
+		margin-left: 32.2%;
+		margin-top: 4px;
+		text-align: center;
+		font-family: Signika Negative;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		padding-top: 3.5px;
+	}
+	
+	#line {
+		width: 35px;
+		height: 0px;
+		border: 1.5px solid white;
+		transform: translateX(13px);
+	}
+	#unit {
+		float: left;
+		font-family: Signika Negative;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		margin-left: 18px;
+		margin-top: 20px;
+	}
+
+	#ques {
+		float: left;
+		background-color:#fc8eac;
+		width: 25%;
+		height: 40%;
+		border-radius: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 68px;
+		padding-right: 70px;
+		margin-left: 9%;
+		margin-top: 20px;
+	}
+	#ques a {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background-color: white;
+	}
+	#candy {
+		float: left;
+		margin-top: 10px;
+		margin-left: 13%;
+	}
+	#count {
+		float: left;
+		font-family: Signika Negative;
+		color: white;
+		font-weight: bold;
+		font-size: 23px;
+		margin-top: 18px;
+		margin-left: 4px;
+	}
+	#no {
+		background-color: lightgray;
+		width: 20px;
+		border-radius: 25px;
+		width: 50px;
+		font-family: monospace;
+		font-size: 20px;
+		font-weight: 900;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-left: 10px;
+		margin-top: 12px;
+	}
+	#ans {
+		width: 100%;
+		font-family: Bree Serif;
+		font-size: 23px;
+		font-weight: normal;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 30px;
+		padding-right: 10px;
+	}
+
+	#op1 {
+		width: 50%;
+		padding:12px;
+		border-radius: 10px;
+		border: 3px solid lightgray;
+		margin-left: 18px;
+		position: relative;
+	}
+	#op1 div {
+		float: left;
+		display: inline-block;
+		font-family:Convergence;
+		font-weight: bold;
+		font-size: 25px;
+		padding-left: 40px;
+		padding-top: 9px;
+	}
+
+	#op1 a {
+		float: left;
+	}
+
+	#op1::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#op2 {
+		width: 50%;
+		padding:12px;
+		border-radius: 10px;
+		border: 3px solid lightgray;
+		margin-left: 18px;
+		position: relative;
+	}
+	#op2 div {
+		float: left;
+		display: inline-block;
+		font-family:Convergence;
+		font-weight: bold;
+		font-size: 25px;
+		padding-left: 40px;
+		padding-top: 9px;
+	}
+
+	#op2 a {
+		float: left;
+	}
+
+	#op2::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#op3 {
+		width: 50%;
+		padding:12px;
+		border-radius: 10px;
+		border: 3px solid lightgray;
+		margin-left: 18px;
+		position: relative;
+	}
+	#op3 div {
+		float: left;
+		display: inline-block;
+		font-family:Convergence;
+		font-weight: bold;
+		font-size: 25px;
+		padding-left: 40px;
+		padding-top: 9px;
+	}
+
+	#op3 a {
+		float: left;
+	}
+
+	#op3::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#op4 {
+		width: 50%;
+		padding:12px;
+		border-radius: 10px;
+		border: 3px solid lightgray;
+		margin-left: 18px;
+		position: relative;
+	}
+	#op4 div {
+		float: left;
+		display: inline-block;
+		font-family:Convergence;
+		font-weight: bold;
+		font-size: 25px;
+		padding-left: 40px;
+		padding-top: 9px;
+	}
+
+	#op4 a {
+		float: left;
+	}
+
+	#op4::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#correct,#wrong {
+		position: absolute;
+		right:25px;
+		display: none;
+	}
+	#nxt {
+		width: 70px;
+		height: 100px;
+		background-color:#00802b;
+		position: absolute;
+		right: 0;
+		top: 43%;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border-bottom-width: 10px;
+		border-style: solid;
+		border-color: #004d1a;
+		border-right: transparent;
+		padding-top: 10px;
+		display: none;
+		cursor: pointer;
+	}
+	#but {
+		text-align: center;
+		font-family: Bree Serif;
+		color: white;
+		margin-left: 10px;
+		margin-top: -4px;
+		display: block;
+		text-decoration: none;
+	}
+
+</style>
+</head>
+<body>
+	<div class = "top"> 
+		<div id="topic"> Rounding Decimals </div>  
+		<div id="mark"> 
+		<div id="rem">  0  <div id="line"> </div>  1  </div> 
+		<div id="unit"> unit </div>
+		<div id="ques"> <a></a> <a></a> <a></a> <a></a> <a></a> <a></a> <a></a> <a></a> <a></a> <a></a> </div>
+		<div id="candy"> <img src="https://img.icons8.com/fluency/48/null/cotton-candy.png">  </div>
+		<div id="count"> 0 </div>
+	    </div>
+	</div>
+	<div class="main"> 
+		<div id="no"> 4 </div> 
+		<div id="ans"> Round  239.456  to the nearest <b> hundred </b>.  </div>
+		<br>
+		<div id="op1"> <a> <img src="https://img.icons8.com/ios-filled/48/64ADF1/circled-a.png"/> </a> <div> 300 </div>
+		<a id="wrong"> <img src="https://img.icons8.com/emoji/40/null/cross-mark-emoji.png"/> </a> </div>
+		<br>
+		<div id="op2"> <a> <img src="https://img.icons8.com/ios-filled/48/64ADF1/circled-b.png"/> </a> <div> 239.45 </div>
+		<a id="correct"> <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> </a>  </div>
+		<br>
+		<div id="op3"> <a> <img src="https://img.icons8.com/ios-filled/48/64ADF1/circled-c.png"/> </a> <div> 200 </div> 
+		<a id="wrong"> <img src="https://img.icons8.com/emoji/40/null/cross-mark-emoji.png"/> </a> </div>
+		<br>
+		<div id="op4"> <a> <img src="https://img.icons8.com/ios-filled/48/64ADF1/circled-d.png"/> </a> <div> 239.4 </div> 
+		<a id="wrong"> <img src="https://img.icons8.com/emoji/40/null/cross-mark-emoji.png"/> </a> </div>
+	</div>
+	<div id="nxt"> 
+		<a style="margin-left:15px;"> <img src="https://img.icons8.com/ios-filled/48/ffffff/arrow.png"/> </a>
+		<a id="but"> NEXT </a>
+	</div>
+</body>
+<script>
+	var first,sec,third,ans;
+	ans = "red";
+	first = sessionStorage.getItem("first");
+	sec = sessionStorage.getItem("sec");
+
+	document.querySelector("#ques").children[0].style.backgroundColor = first;
+	document.querySelector("#ques").children[1].style.backgroundColor = sec;
+	if(sessionStorage.getItem("pre") == "green") {
+		third = "green";
+		document.querySelector("#ques").children[2].style.backgroundColor = third;
+	}
+	else {
+		third = "red";
+		document.querySelector("#ques").children[2].style.backgroundColor = third;
+	}
+	document.querySelector("#ques").children[3].style.backgroundColor = "yellow";
+
+	var candy = sessionStorage.getItem("candy");
+	document.getElementById("count").innerHTML = candy;
+	candy = +candy;
+	
+	var op1 = document.querySelector("#op1");
+	var op2 = document.querySelector("#op2");
+	var op3 = document.querySelector("#op3");
+	var op4 = document.querySelector("#op4");
+	var ans = "red";
+
+	op1.addEventListener("click",check1);
+	op2.addEventListener("click",check2)
+	op3.addEventListener("click",check3);
+	op4.addEventListener("click",check4);
+	document.querySelector("#nxt").addEventListener("click",send);
+
+	function check1() {
+		op1.style.border = "3px solid red";
+		op1.querySelector("#wrong").style.display = "inline";
+		op2.style.border = "3px solid green";
+		op2.querySelector("#correct").style.display = "inline";
+		document.querySelector("#nxt").style.display = "block";
+
+		op1.removeEventListener("click",check1);
+		op2.removeEventListener("click",check2)
+		op3.removeEventListener("click",check3);
+		op4.removeEventListener("click",check4);
+
+	}
+
+	function check2() {
+		op2.style.border = "3px solid green";
+		op2.querySelector("#correct").style.display = "inline";
+		document.querySelector("#nxt").style.display = "block";
+
+		op1.removeEventListener("click",check1);
+		op2.removeEventListener("click",check2)
+		op3.removeEventListener("click",check3);
+		op4.removeEventListener("click",check4);
+
+		ans = "green";
+		candy+=1;
+	} 
+
+	function check3() {
+		op3.style.border = "3px solid red";
+		op2.style.border = "3px solid green";
+		op3.querySelector("#wrong").style.display = "inline";
+		op2.querySelector("#correct").style.display = "inline";
+		document.querySelector("#nxt").style.display = "block";
+
+		op1.removeEventListener("click",check1);
+		op2.removeEventListener("click",check2)
+		op3.removeEventListener("click",check3);
+		op4.removeEventListener("click",check4);
+	}
+
+	function check4() {
+		op4.style.border = "3px solid red";
+		op2.style.border = "3px solid green";
+		op4.querySelector("#wrong").style.display = "inline";
+		op2.querySelector("#correct").style.display = "inline";
+		document.querySelector("#nxt").style.display = "block";
+
+		op1.removeEventListener("click",check1);
+		op2.removeEventListener("click",check2)
+		op3.removeEventListener("click",check3);
+		op4.removeEventListener("click",check4);
+
+	}
+	var start = sessionStorage.getItem("start");
+	function send() {
+		sessionStorage.setItem("pre",ans);
+		sessionStorage.setItem("first",first);
+		sessionStorage.setItem("sec",sec);
+		sessionStorage.setItem("third",third);
+		sessionStorage.setItem("candy",candy);
+		sessionStorage.setItem("start",start);
+		window.location.href = "decimals5.html";
+	}
+</script>
+</html>

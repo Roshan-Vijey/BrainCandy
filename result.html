@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Results </title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika Negative">
+
+	<style>
+		html,body {
+			margin: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+		.main {
+			background-color:#ffd1dc;
+			height: 100%;
+			width: 1650px;
+			border-top-left-radius: 27%;
+			border-top-right-radius: 25%;
+			margin-top: 5%;
+			margin-left: -195px;
+		}
+
+		#dec {
+			display:inline-block;
+  			padding-top: 20px;
+  			padding-bottom: 20px;
+  			padding-left: 15px;
+  			width: 280px;
+  			color: black;
+  			border-radius: 20px;
+  			font-family: Bree Serif;
+  			font-size: 23px;
+  			font-weight: bold;
+  			background-color: #f2f2f2;
+ 	 		border-bottom-width:10px;
+  			border-bottom-style: solid;
+  			border-bottom-color:lightgray;
+  			text-decoration: none;  
+  			transform: translateY(-50px);
+		}
+		#numspan {
+  			display: inline-block;
+  			color: black;
+  			font-size: 18px;
+  			padding-left:4px;
+		}
+		#top {
+			display: flex;
+			justify-content: center;
+		}
+		#whole {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#one{
+			background-color: blueviolet;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			padding-left: 15px;
+			padding-right: 15px;
+			border-radius: 10px;
+			font-family: Signika Negative;
+			color: white;
+			font-weight: bold;
+			font-size: 30px;
+			display: inline-block;
+			border-bottom-width: 6px;
+			border-bottom-style: solid;
+			border-bottom-color:#974ad2;
+		}
+		#reward::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#candy {
+			display: inline-block;
+			float:left;
+			margin-top: 5px;
+		}
+
+		#count {
+			float: left;
+			display: inline-block;
+			font-family: Signika Negative;
+			color: white;
+			font-weight: bold;
+			font-size: 35px;
+			margin-left: 10px;
+			margin-top: 7px;
+		}
+
+		#two {
+			display: inline-block;
+			border-radius: 10px;
+			background-color: dodgerblue;
+			margin-left: 200px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 20px;
+			padding-right: 25px;
+			border-bottom-width: 10px;
+			border-bottom-style: solid;
+			border-bottom-color: #0492c2;
+		}
+		#time::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		#clock {
+			float: left;
+			display: inline-block;
+			margin-top: 3px;
+		}
+		#now {
+			float: left;
+			display: inline-block;
+			color: white;
+			font-family: Signika Negative;
+			font-size: 30px;
+			font-weight: bold;
+			margin-top: 8px;
+		}
+		#txt {
+			font-family: Signika Negative;
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			transform: translateY(-10px);
+		}
+		#txt1 {
+			font-family: Signika Negative;
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			padding-left: 10px;
+		}
+		#banner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top:200px;
+		}
+		#ban {
+			width:300px;
+			position: absolute;
+			height: 250px;
+			background-color: #D86F45;
+			border-top-left-radius:10%;
+    		border-top-right-radius:10%;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		transform: scale(1.2);
+		}
+		#ban::after {
+			content: "";
+			position: absolute;
+			width: 300px;
+			height: 200px;
+			background-color: #ffd1dc;
+			border-top-left-radius:10%;
+    		border-top-right-radius:10%;
+    		bottom: -60px;
+		}
+		#box1 {
+			padding: 3px;
+			margin-top: -150px;
+			border-radius: 5px;
+			background-color: #F5D6B4;
+			font-family: Signika Negative;
+			font-size: 28px;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+		#box2 {
+			
+			padding: 3px;
+			border-radius: 5px;
+			margin-left: 20px;
+			margin-top: -150px;
+			background-color: #F5D6B4;
+			font-family: Signika Negative;
+			font-size: 28px;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+		#home {
+			padding: 10px;
+			position: absolute;
+			bottom: 10%;
+			left: 41.5%;
+			color: black;
+			color: white;
+			background-color: seagreen;
+			border-bottom-width: 6px;
+			border-bottom-style: solid;
+			border-bottom-color: mediumseagreen;
+			font-family: Signika Negative;
+			font-size: 20px;
+			font-weight: bold;
+			border-radius: 10px;
+			text-decoration: none;
+		}
+		#home:hover {
+			border-bottom-width: 0;
+			transition: 0.5 ease;
+		}
+		#curve1 {
+			width:30px;
+			height:25px;
+			position: absolute;
+			z-index: 2;
+			background-color: #d86f45;
+			border-radius:100%;
+			bottom:25.2%;
+			left:33%;
+		}
+		#curve2 {
+			width:30px;
+			height:25px;
+			position: absolute;
+			z-index: 2;
+			background-color: #D86F45;
+			border-radius:100%;
+			bottom:25.2%;
+			left:57%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class ="main"> 
+		<div id="top"> <a id="dec"> Decimals   <br>  <div id="numspan"> 1 out of 1 units completed </div> </a> </div>
+
+		<div id="whole"> 
+			<div id="one">
+				<div id="reward">
+					<div id="candy"> <img src="https://img.icons8.com/fluency/50/null/cotton-candy.png"/></div> 
+					<div id="count">0</div>
+				</div>
+				<div id="txt"> candies earned </div>
+			</div>
+			<div id="two">
+				<div id='time'> 
+					<div id="clock"> <img src="https://img.icons8.com/windows/45/ffffff/alarm-clock--v2.png"/> </div>
+					<div id="now"></div> 
+				</div>
+				<div id="txt1"> time taken </div>
+			</div>
+		</div>
+		<div id="banner"> <div id="ban"> <div id="box1"> <span style="color:green;">7</span> Correct </div> <div id="box2"> <span style="color: red;"> 3 </span> Wrong </div> </div> </div>
+		<a id="home" href="C:\Users\Sasikala\Desktop\BrainCandy\homepage.html"> Go to home </a>
+		<div id="curve1"></div>
+		<div id="curve2"></div>
+	</div>
+</body>
+<script>
+	var candy = sessionStorage.getItem("candy");
+	var start = sessionStorage.getItem("start");
+	start = new Date(start);
+	var end = new Date();
+	var time = (end-start)/1000;
+	candy = +candy;
+	time = String(time);
+	const arr = time.split(".");
+	if((+arr[0])<60) {
+		document.getElementById("now").innerHTML = "00"+":"+arr[0];
+	}
+	else if((+arr[0])>=60 && (+arr[0])<600) {
+		const curr = String((+arr[0])/60).split(".");
+		var se = curr[1].slice(0,2);
+		se = (+se)/100;
+		se = se*60;
+		se = String(se).split(".")
+		if(+se[0]<10) {
+			document.getElementById("now").innerHTML = "0"+curr[0]+":"+"0"+se[0];
+		} 
+		else {
+			document.getElementById("now").innerHTML = "0"+curr[0]+":"+se[0];
+		}
+	}
+	document.getElementById("box1").children[0].innerHTML = candy;
+	document.getElementById("box2").children[0].innerHTML = 10-candy;
+	document.getElementById("count").innerHTML = candy;
+
+	var home = document.getElementById("home");
+	home.addEventListener("click",lock);
+
+	function lock() {
+		var op = "light";
+		sessionStorage.setItem("op",op);
+		sessionStorage.setItem("candy",candy);
+		window.location.href = "homepage.html";
+	}
+</script>
+</html>
