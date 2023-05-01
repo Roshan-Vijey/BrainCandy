@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Braincandy | Login </title>
+<link rel="stylesheet" href="https://github.com/Roshan-Vijey/BrainCandy/blob/main/GROBOLD.ttf">
+<link rel="stylesheet" href = "https://github.com/Roshan-Vijey/BrainCandy/blob/main/Boba%20Cups.ttf">
+<style>
+html {
+  height:100%;
+}
+body { 
+  margin:0;
+  height:100%;
+}
+body:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+* {
+  box-sizing:border-box;
+}
+.login h1{
+    font-family:Boba Cups;
+    margin-left: 50px;
+    margin-top:40px;
+    font-size:70px;
+}
+.logo {
+   width:60%;
+   height:100%;
+   overflow:hidden;
+   float: left;
+}
+.login {
+   background:white;
+   width:40%;
+   height:100%;
+   float: left;
+}
+#logintitle {
+  color:black;
+  font-family:GROBOLD;
+  font-size:20px;
+  margin-left:55px;
+  margin-top:30px;
+}
+#in{
+  margin-left:75px;
+  margin-top:10px;
+  padding:15px;
+  border:1px solid lightgrey;
+  background-color:#f2f2f2;
+  border-radius:20px;
+  width:350px;
+  outline-color:#454545;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+}
+#out {
+  margin-top:20px;
+  display: inline-block;
+  margin-left:75px;
+  padding: 12px;
+  border:none;
+  border-radius:20px;
+  background-color:hotpink;
+  color:white;
+  width:350px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  text-decoration: none;
+  text-align: center;
+}
+#out:hover {
+  background-color:#FF8997;
+}
+::placeholder {
+  text-align:center;
+  font-weight:light;
+}
+#check {
+  margin-top:10px;
+  margin-left:90px;
+  border:none;
+}
+#rem{
+  color:black;
+  font-family:Georgia,serif;
+  font-size:16px;
+}
+#forgot {
+ color:black;
+ font-family:Georgia,serif;
+ margin-left:80px;
+ text-decoration:none;
+ font-size:16px;
+} 
+#forgot:hover {
+ text-decoration:underline;
+}
+#new {
+ color:black;
+ font-family:Georgia,serif;
+ margin-left:160px;
+ margin-top:80px;
+}
+#create:hover {
+ text-decoration:underline;
+ cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div class = logo>
+<img src="https://github.com/Roshan-Vijey/BrainCandy/blob/main/math.jpg" width=800 height=1200>
+</div>
+<div class = login>
+<h1> 
+<span style="color:#9F3E9A;">B</span><span style="color:#F66A98;">r</span><span style="color:#FF8997;">a</span><span style="color:#64ADF1;">i</span><span style="color:#C15AA8;">n</span><span style="color:#9F3E98;">C</span><span style="color:#F66A98;">a</span><span style="color:#FF8997;">n</span><span style="color:#64ADF1 ;">d</span><span style="color:#C15AA8;">y</span>
+</h1>
+<div id="logintitle"> Are you ready for some fun and learning? </div> 
+<br><br><br> 
+<input id = "in" type="text" autocomplet="on" placeholder="Username" required>
+<br><br>
+<input id="in" type="password" autocomplet="on" placeholder="Password" required>
+<br><br>
+<input id="check" type="checkbox"> <span id="rem"> Remember me </span> <a id="forgot"> Forgot Password? </a> 
+<br>
+<a id ="out" href="https://www.google.com"> Log in </a>
+<div id="new"> New User? <a id="create" >Create Account</span> </a>
+</div>
+</div>
+</body>
+</html>
